@@ -1,9 +1,7 @@
 package org.jboss.pnc.api.bifrost.dto;
 
 import lombok.Getter;
-
-import javax.json.bind.Jsonb;
-import javax.json.bind.JsonbBuilder;
+import lombok.Setter;
 
 /**
  * @author <a href="mailto:matejonnet@gmail.com">Matej Lazar</a>
@@ -11,6 +9,7 @@ import javax.json.bind.JsonbBuilder;
 public class MetaData {
 
     @Getter
+    @Setter
     private String md5Digest;
 
     public MetaData() {
@@ -18,11 +17,6 @@ public class MetaData {
 
     public MetaData(String md5Digest) {
         this.md5Digest = md5Digest;
-    }
-
-    public static MetaData fromString(String json) {
-        Jsonb jsonb = JsonbBuilder.create();
-        return jsonb.fromJson(json, MetaData.class);
     }
 
 }

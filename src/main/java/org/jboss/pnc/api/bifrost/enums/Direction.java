@@ -5,7 +5,6 @@ package org.jboss.pnc.api.bifrost.enums;
  */
 public enum Direction {
 
-    ASC,
-    DESC;
+    ASC, DESC;
 
 }

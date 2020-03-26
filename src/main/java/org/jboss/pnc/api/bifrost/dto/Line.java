@@ -22,6 +22,8 @@ public class Line {
     @JsonbProperty("@timestamp")
     private String timestamp;
 
+    private String sequence;
+
     private String loggerName;
 
     private String message;
@@ -45,6 +47,7 @@ public class Line {
         Builder builder = new Builder();
         builder.id = copy.getId();
         builder.timestamp = copy.getTimestamp();
+        builder.sequence = copy.getSequence();
         builder.loggerName = copy.getLoggerName();
         builder.message = copy.getMessage();
         builder.last = copy.isLast();
@@ -70,6 +73,8 @@ public class Line {
 
         private String timestamp;
 
+        private String sequence;
+
         private String loggerName;
 
         private String message;
@@ -88,6 +93,11 @@ public class Line {
 
         public Builder timestamp(String timestamp) {
             this.timestamp = timestamp;
+            return this;
+        }
+
+        public Builder sequence(String sequence) {
+            this.sequence = sequence;
             return this;
         }
 
@@ -115,6 +125,7 @@ public class Line {
             Line line = new Line();
             line.id = this.id;
             line.timestamp = this.timestamp;
+            line.sequence = this.sequence;
             line.loggerName = this.loggerName;
             line.message = this.message;
             line.last = this.last;

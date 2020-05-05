@@ -32,6 +32,16 @@
             <organizationUrl>http://www.redhat.com</organizationUrl>
         </developer>
     </developers>
+
+    <repositories>
+        <repository>
+            <id>Nexus Staging</id>
+            <url>https://oss.sonatype.org/content/groups/staging</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>

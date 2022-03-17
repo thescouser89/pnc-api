@@ -24,6 +24,7 @@ import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.jackson.Jacksonized;
 
+import org.jboss.pnc.api.dto.HeartbeatConfig;
 import org.jboss.pnc.api.dto.Request;
 
 @ToString
@@ -43,5 +44,5 @@ public class AnalyzePayload implements Serializable {
 
     private Request callback;
 
-    private Request heartbeat;
+    private HeartbeatConfig heartbeat;
 }

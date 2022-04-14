@@ -62,5 +62,7 @@ public class MavenArtifact extends Artifact {
         }
     }
 
-    public abstract static class MavenArtifactBuilder<C extends MavenArtifact, B extends MavenArtifact.MavenArtifactBuilder<C, B>> extends ArtifactBuilder<C, B> { }
+    public abstract static class MavenArtifactBuilder<C extends MavenArtifact, B extends MavenArtifact.MavenArtifactBuilder<C, B>>
+            extends ArtifactBuilder<C, B> {
+    }
 }

@@ -55,6 +55,8 @@ public class NPMArtifact extends Artifact {
         }
     }
 
-    public abstract static class NPMArtifactBuilder<C extends NPMArtifact, B extends NPMArtifact.NPMArtifactBuilder<C, B>> extends ArtifactBuilder<C, B> {}
+    public abstract static class NPMArtifactBuilder<C extends NPMArtifact, B extends NPMArtifact.NPMArtifactBuilder<C, B>>
+            extends ArtifactBuilder<C, B> {
+    }
 
 }

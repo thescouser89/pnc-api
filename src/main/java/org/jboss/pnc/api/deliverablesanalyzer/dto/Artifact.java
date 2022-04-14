@@ -72,6 +72,7 @@ public class Artifact {
 
     private final boolean builtFromSource;
 
-    public abstract static class ArtifactBuilder<C extends Artifact, B extends Artifact.ArtifactBuilder<C, B>> {}
+    public abstract static class ArtifactBuilder<C extends Artifact, B extends Artifact.ArtifactBuilder<C, B>> {
+    }
 
 }

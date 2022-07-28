@@ -23,7 +23,7 @@ import static org.jboss.pnc.api.enums.BuildProgress.PENDING;
 
 /**
  * Status of a running/completed Build/GroupBuild.
- * 
+ *
  * The status class is shared by both Build and GroupBuild dtos, which are published through UI/WebSocket.
  *
  * @author Jakub Bartecek &lt;jbartece@redhat.com&gt;
@@ -45,32 +45,32 @@ public enum BuildStatus {
 
     /**
      * A Build has been requested (possibly via dependants) but no actual build happened as it was not required.
-     * 
+     *
      * For a previously successful Build, a rebuild is required when (conditions depend on a type of check):
      *
      * **Explicit**
      *
      * 1. The BuildConfig has been modified since the last successful Build
-     * 
+     *
      * 2. A BuildConfig, explicitly defined as a dependency of this one, has been modified since the last successful
      * Build
-     * 
+     *
      * 3. There exists a newer, successful Build of a BuildConfig explicitly defined as a dependency of this one.
      *
      *
      * **Implicit**
      *
      * 1. Explicit criteria plus:
-     * 
+     *
      * 2. There exists a newer version of an implicit dependency which can be: A Build which produced artifacts that
      * were used for alignment during build process or automatically captured from sources such as Indy, MRRC or Maven
      * Central
      *
      *
      * **Force**
-     * 
+     *
      * 1. Always
-     * 
+     *
      * A GroupBuild is deemed unnecessary to be built if all the included Builds do not require rebuild.
      *
      *
@@ -152,7 +152,7 @@ public enum BuildStatus {
 
     /**
      * Returns what progress state this status represents.
-     * 
+     *
      * @see BuildProgress
      */
     public BuildProgress progress() {

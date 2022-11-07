@@ -37,6 +37,7 @@ public class BuildRequest {
     private final String projectName;
     private final String scmUrl;
     private final String scmRevision;
+    private final String scmTag;
     private final String command;
     private final String workingDirectory;
     private final String environmentBaseUrl;

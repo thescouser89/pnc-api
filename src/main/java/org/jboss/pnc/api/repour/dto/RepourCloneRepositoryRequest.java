@@ -52,6 +52,11 @@ public class RepourCloneRepositoryRequest {
     private String targetRepoUrl;
 
     /**
+     * Specific reference to sync. Reference can be a tag, branch, or commit id
+     */
+    private String ref;
+
+    /**
      * Callback specification
      */
     private RepourCloneCallback callback;

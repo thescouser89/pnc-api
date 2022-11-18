@@ -38,7 +38,7 @@ import lombok.ToString;
 public class RepourAdjustRequest {
 
     @JsonProperty("internal_url")
-    private String internalUrl;
+    private RepourAdjustInternalUrl internalUrl;
     private String ref;
 
     private RepourAdjustCallback callback;

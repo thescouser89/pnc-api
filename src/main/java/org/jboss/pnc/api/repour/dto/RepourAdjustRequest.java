@@ -26,6 +26,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
+import java.util.Map;
+
 /**
  * DTO to run Repour's adjust request for build alignment
  */
@@ -45,7 +47,7 @@ public class RepourAdjustRequest {
 
     private boolean sync;
     private String originRepoUrl;
-    private String adjustParameters;
+    private Map<String, String> adjustParameters;
 
     private boolean tempBuild;
     private String tempBuildTimestamp;

@@ -41,7 +41,7 @@ public class MilestoneReleaseRequest {
     /**
      * URL to callback once done
      */
-    private String callback;
+    private Request callback;
 
     @JsonPOJOBuilder(withPrefix = "")
     @JsonIgnoreProperties(ignoreUnknown = true)

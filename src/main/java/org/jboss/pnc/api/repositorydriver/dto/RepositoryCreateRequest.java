@@ -22,6 +22,8 @@ public class RepositoryCreateRequest {
     private final String buildContentId;
     private final BuildType buildType;
     private final boolean tempBuild;
+
+    private final boolean isBrewPullActive;
     private final List<String> extraRepositories;
 
 }

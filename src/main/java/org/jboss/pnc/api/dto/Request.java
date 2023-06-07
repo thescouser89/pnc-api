@@ -34,6 +34,7 @@ import javax.validation.constraints.NotNull;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import static org.jboss.pnc.api.constants.HttpHeaders.AUTHORIZATION_STRING;
 
@@ -52,14 +53,26 @@ public class Request {
 
     private final List<@Valid Header> headers;
 
+    /**
+     * Body of the request
+     */
     private final Object attachment;
 
+    /**
+     * Annotations are metadata that can influence the behaviour of the request beyond the HTTP method, url, and
+     * headers. For example, the code doing the request could apply changes to the attachment or headers based on the
+     * annotations.
+     * <p/>
+     * Annotations are dependent on how the client doing the request interprets those values.
+     */
+    private final Map<String, List<String>> annotations;
+
     public Request(Method method, URI uri) {
-        this(method, uri, new ArrayList<>(), null);
+        this(method, uri, new ArrayList<>(), null, null);
     }
 
     public Request(Method method, URI uri, List<Header> headers) {
-        this(method, uri, headers, null);
+        this(method, uri, headers, null, null);
     }
 
     public enum Method {

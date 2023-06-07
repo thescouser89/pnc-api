@@ -25,10 +25,14 @@ import org.jboss.pnc.api.constants.HttpHeaders;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import javax.ws.rs.core.MultivaluedHashMap;
+import javax.ws.rs.core.MultivaluedMap;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
@@ -45,6 +49,31 @@ class RequestSerializationTest {
 
         Request deserialized = objectMapper.readValue(serialized, Request.class);
         Assertions.assertEquals(Request.Method.GET, deserialized.getMethod());
+    }
+
+    @Test
+    public void shouldDeserializeRequestWithAnnotations() throws JsonProcessingException, URISyntaxException {
+        List<Request.Header> headers = new ArrayList<>();
+        headers.add(new Request.Header(HttpHeaders.AUTHORIZATION_STRING, "Bearer 12345"));
+        Map<String, List<String>> annotations = new HashMap<>();
+
+        List<String> abc = new ArrayList<>();
+        abc.add("1");
+        abc.add("2");
+
+        List<String> def = new ArrayList<>();
+        def.add("3");
+        def.add("4");
+
+        annotations.put("abc", abc);
+        annotations.put("def", def);
+
+        Request request = new Request(Request.Method.GET, new URI("http://localhost/"), headers, null, annotations);
+        String serialized = objectMapper.writeValueAsString(request);
+
+        Request deserialized = objectMapper.readValue(serialized, Request.class);
+        Assertions.assertEquals(Request.Method.GET, deserialized.getMethod());
+        Assertions.assertEquals(annotations, deserialized.getAnnotations());
     }
 
     @Test

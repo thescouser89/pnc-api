@@ -22,6 +22,7 @@ import org.jboss.pnc.api.bifrost.enums.Direction;
 import org.jboss.pnc.api.bifrost.dto.Line;
 import org.jboss.pnc.api.bifrost.dto.MetaData;
 import org.jboss.pnc.api.bifrost.enums.Format;
+import org.jboss.pnc.api.dto.ComponentVersion;
 
 import javax.validation.constraints.Min;
 import javax.ws.rs.Consumes;
@@ -80,4 +81,8 @@ public interface Bifrost {
             @QueryParam("maxLines") Integer maxLines,
             @QueryParam("batchSize") @Min(1) Integer batchSize) throws IOException;
 
+    @GET
+    @Path("/version")
+    @Produces(MediaType.APPLICATION_JSON)
+    ComponentVersion getVersion();
 }

@@ -23,7 +23,7 @@ public class RepositoryCreateRequest {
     private final BuildType buildType;
     private final boolean tempBuild;
 
-    private final boolean isBrewPullActive;
+    private final boolean brewPullActive;
     private final List<String> extraRepositories;
 
 }

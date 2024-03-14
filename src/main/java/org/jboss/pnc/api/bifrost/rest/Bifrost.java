@@ -71,6 +71,11 @@ public interface Bifrost {
             @QueryParam("batchSize") @Min(1) Integer batchSize) throws IOException;
 
     @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/final-log/{buildId}/{tag}")
+    Response getFinalLog(String buildId, String tag);
+
+    @GET
     @Path("/metadata")
     @Produces(MediaType.APPLICATION_JSON)
     MetaData getMetaData(

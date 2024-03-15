@@ -74,8 +74,8 @@ public interface Bifrost {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     @Consumes
-    @Path("/final-log/{processContext}/{tag}")
-    Response getFinalLog(@PathParam("processContext") String processContext, @PathParam("tag") String tag);
+    @Path("/final-log/{buildId}/{tag}")
+    Response getFinalLog(@PathParam("buildId") String processContext, @PathParam("tag") String tag);
 
     @GET
     @Path("/metadata")

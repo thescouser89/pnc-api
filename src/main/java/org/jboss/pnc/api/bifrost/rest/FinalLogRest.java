@@ -29,6 +29,7 @@ import javax.ws.rs.core.Response;
 @Path("/final-log")
 public interface FinalLogRest {
 
+    @GET
     @Produces(MediaType.TEXT_PLAIN)
     @Consumes
     @Path("/{buildId}/{tag}")

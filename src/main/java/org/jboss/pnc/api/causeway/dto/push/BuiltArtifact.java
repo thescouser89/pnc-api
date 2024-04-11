@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import lombok.Data;
 import lombok.NonNull;
 
-import java.util.Objects;
-
 /**
  *
  * @author Honza Brázdil &lt;janinko.g@gmail.com&gt;

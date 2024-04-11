@@ -22,10 +22,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.regex.Pattern;
-
-import static org.jboss.pnc.api.constants.Patterns.PRODUCT_MILESTONE_VERSION;
-
 public class ArtifactTest {
 
     ObjectMapper objectMapper = new ObjectMapper();

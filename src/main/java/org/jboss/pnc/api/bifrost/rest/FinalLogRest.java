@@ -27,7 +27,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/final-log")
-public interface FinalLog {
+public interface FinalLogRest {
 
     @Produces(MediaType.TEXT_PLAIN)
     @Consumes

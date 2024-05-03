@@ -9,7 +9,7 @@ import lombok.extern.jackson.Jacksonized;
 @Builder
 @Getter
 @Setter
-public class OidcTokenRequest {
+public class TrustboxTokenRequest {
 
     /**
      * Should be the same format as what quarkus wants it: aka https://{server}/auth/realms/{realm}

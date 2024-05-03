@@ -10,7 +10,7 @@ import lombok.extern.jackson.Jacksonized;
 @Builder
 @Getter
 @Setter
-public class OidcTokenResponse {
+public class TrustboxTokenResponse {
     @JsonProperty("access_token")
     private String accessToken;
 }

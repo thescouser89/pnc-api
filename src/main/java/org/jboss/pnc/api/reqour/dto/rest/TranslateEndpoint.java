@@ -22,17 +22,26 @@ import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import org.jboss.pnc.api.constants.OpenapiConstants;
 import org.jboss.pnc.api.dto.ErrorResponse;
 import org.jboss.pnc.api.reqour.dto.TranslateRequest;
 import org.jboss.pnc.api.reqour.dto.TranslateResponse;
 
 import javax.validation.Valid;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
 /**
  * Endpoint for translation of the external URL to internal URL.
  */
+@Tag(name = "Translate")
+@Consumes(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON)
+@Path("/external-to-internal")
 public interface TranslateEndpoint {
 
     String EXTERNAL_TO_INTERNAL_DESC = "Translate external git repo URL into internal";

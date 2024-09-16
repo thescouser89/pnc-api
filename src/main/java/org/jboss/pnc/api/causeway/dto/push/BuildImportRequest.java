@@ -40,13 +40,17 @@ public class BuildImportRequest {
     private final Build build;
     private final boolean reimport;
 
+    private final String userInitiator;
+
     @JsonCreator
     public BuildImportRequest(
             @JsonProperty("callback") Request callback,
             @JsonProperty("build") Build build,
-            @JsonProperty("reimport") Boolean reimport) {
+            @JsonProperty("reimport") Boolean reimport,
+            @JsonProperty("userInitiator") String userInitiator) {
         this.callback = Objects.requireNonNull(callback, "Callback must be specified.");
         this.build = Objects.requireNonNull(build, "Build information must be specified.");
         this.reimport = reimport != null && reimport;
+        this.userInitiator = userInitiator;
     }
 }

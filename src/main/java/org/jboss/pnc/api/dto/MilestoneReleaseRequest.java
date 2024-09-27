@@ -43,6 +43,8 @@ public class MilestoneReleaseRequest {
      */
     private Request callback;
 
+    private String userInitiator;
+
     @JsonPOJOBuilder(withPrefix = "")
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static final class Builder {

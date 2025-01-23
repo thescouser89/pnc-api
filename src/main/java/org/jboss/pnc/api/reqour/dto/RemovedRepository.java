@@ -4,12 +4,13 @@
  */
 package org.jboss.pnc.api.reqour.dto;
 
+import java.net.URI;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-
-import java.net.URI;
 
 /**
  * Removed repository

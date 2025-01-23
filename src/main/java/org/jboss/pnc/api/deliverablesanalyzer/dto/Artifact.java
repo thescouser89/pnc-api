@@ -17,19 +17,20 @@
  */
 package org.jboss.pnc.api.deliverablesanalyzer.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import lombok.Data;
-import lombok.experimental.SuperBuilder;
-import lombok.extern.jackson.Jacksonized;
-
 import java.util.Collection;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+import lombok.Data;
+import lombok.experimental.SuperBuilder;
+import lombok.extern.jackson.Jacksonized;
 
 /**
  *
@@ -45,7 +46,8 @@ import javax.validation.constraints.Positive;
         include = JsonTypeInfo.As.EXISTING_PROPERTY,
         property = "artifactType",
         defaultImpl = Artifact.class)
-@JsonSubTypes({ @JsonSubTypes.Type(value = MavenArtifact.class, name = "MAVEN"),
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = MavenArtifact.class, name = "MAVEN"),
         @JsonSubTypes.Type(value = NPMArtifact.class, name = "NPM") })
 public class Artifact {
 

@@ -17,10 +17,12 @@
  */
 package org.jboss.pnc.api.dto;
 
+import org.jboss.pnc.api.enums.ResultStatus;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.jboss.pnc.api.enums.ResultStatus;
 
 @Data
 @AllArgsConstructor

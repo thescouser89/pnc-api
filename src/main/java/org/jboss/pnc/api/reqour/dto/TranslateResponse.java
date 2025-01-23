@@ -17,12 +17,12 @@
  */
 package org.jboss.pnc.api.reqour.dto;
 
+import javax.validation.constraints.NotBlank;
+
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.jackson.Jacksonized;
-
-import javax.validation.constraints.NotBlank;
 
 @Value
 @SuperBuilder(toBuilder = true)

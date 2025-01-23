@@ -17,11 +17,13 @@
  */
 package org.jboss.pnc.api.causeway.dto.push;
 
+import org.jboss.pnc.api.enums.ResultStatus;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.enums.ResultStatus;
 
 @Data
 @Builder

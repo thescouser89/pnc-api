@@ -1,15 +1,16 @@
 package org.jboss.pnc.api.dependencyanalyzer.dto;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Singular;
-import lombok.ToString;
-import org.jboss.pnc.api.enums.Qualifier;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+
+import org.jboss.pnc.api.enums.Qualifier;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Singular;
+import lombok.ToString;
 
 @Getter
 @Builder

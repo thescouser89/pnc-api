@@ -17,11 +17,12 @@
  */
 package org.jboss.pnc.api.reqour.dto;
 
+import org.jboss.pnc.api.reqour.dto.validation.ValidGitRepositoryURL;
+
 import lombok.Value;
 import lombok.experimental.NonFinal;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.reqour.dto.validation.ValidGitRepositoryURL;
 
 @Value
 @NonFinal

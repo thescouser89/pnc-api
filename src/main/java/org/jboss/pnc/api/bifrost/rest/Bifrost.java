@@ -18,11 +18,8 @@
 
 package org.jboss.pnc.api.bifrost.rest;
 
-import org.jboss.pnc.api.bifrost.enums.Direction;
-import org.jboss.pnc.api.bifrost.dto.Line;
-import org.jboss.pnc.api.bifrost.dto.MetaData;
-import org.jboss.pnc.api.bifrost.enums.Format;
-import org.jboss.pnc.api.dto.ComponentVersion;
+import java.io.IOException;
+import java.util.List;
 
 import javax.validation.constraints.Min;
 import javax.ws.rs.Consumes;
@@ -33,8 +30,12 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.io.IOException;
-import java.util.List;
+
+import org.jboss.pnc.api.bifrost.dto.Line;
+import org.jboss.pnc.api.bifrost.dto.MetaData;
+import org.jboss.pnc.api.bifrost.enums.Direction;
+import org.jboss.pnc.api.bifrost.enums.Format;
+import org.jboss.pnc.api.dto.ComponentVersion;
 
 /**
  * @author <a href="mailto:matejonnet@gmail.com">Matej Lazar</a>
@@ -57,7 +58,7 @@ public interface Bifrost {
             @QueryParam("batchDelay") @Min(200) Integer batchDelay,
             @QueryParam("follow") boolean follow,
             @QueryParam("timeoutProbeString") String timeoutProbeString); // if string is defined the server is sending
-                                                                          // given string as a connection probe. The
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    // given string as a connection probe. The
 
     @GET
     @Path("/")

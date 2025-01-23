@@ -2,6 +2,7 @@ package org.jboss.pnc.api.deliverablesanalyzer.dto;
 
 import java.net.URL;
 import java.util.Set;
+
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;

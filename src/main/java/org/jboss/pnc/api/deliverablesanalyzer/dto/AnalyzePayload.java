@@ -18,14 +18,14 @@ package org.jboss.pnc.api.deliverablesanalyzer.dto;
 import java.io.Serializable;
 import java.util.List;
 
+import org.jboss.pnc.api.dto.HeartbeatConfig;
+import org.jboss.pnc.api.dto.Request;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.jackson.Jacksonized;
-
-import org.jboss.pnc.api.dto.HeartbeatConfig;
-import org.jboss.pnc.api.dto.Request;
 
 @ToString
 @Getter

@@ -1,12 +1,12 @@
 package org.jboss.pnc.api.enums;
 
-import org.jboss.pnc.api.constants.Patterns;
-import org.jboss.pnc.api.dto.validation.ValidationResult;
+import static java.text.MessageFormat.format;
 
 import java.util.Arrays;
 import java.util.Optional;
 
-import static java.text.MessageFormat.format;
+import org.jboss.pnc.api.constants.Patterns;
+import org.jboss.pnc.api.dto.validation.ValidationResult;
 
 public enum Qualifier {
     PRODUCT_ID(1), PRODUCT(1, PRODUCT_ID) {

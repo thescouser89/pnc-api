@@ -4,12 +4,13 @@
  */
 package org.jboss.pnc.api.reqour.dto;
 
+import javax.validation.constraints.NotBlank;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-
-import javax.validation.constraints.NotBlank;
 
 /**
  * Versioning state of the manipulator result

@@ -18,17 +18,19 @@
 
 package org.jboss.pnc.api.repositorydriver.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.Builder;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.jackson.Jacksonized;
+import java.time.Instant;
+
+import javax.validation.constraints.NotNull;
 
 import org.jboss.pnc.api.enums.ArtifactQuality;
 import org.jboss.pnc.api.enums.BuildCategory;
 
-import javax.validation.constraints.NotNull;
-import java.time.Instant;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.jackson.Jacksonized;
 
 /**
  * @author <a href="mailto:matejonnet@gmail.com">Matej Lazar</a>

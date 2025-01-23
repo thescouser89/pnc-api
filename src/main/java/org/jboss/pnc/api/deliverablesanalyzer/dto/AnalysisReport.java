@@ -18,14 +18,14 @@ package org.jboss.pnc.api.deliverablesanalyzer.dto;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
-
-import javax.validation.Valid;
 
 /**
  * An object container for the results of the analysis

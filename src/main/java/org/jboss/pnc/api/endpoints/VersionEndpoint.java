@@ -17,6 +17,11 @@
  */
 package org.jboss.pnc.api.endpoints;
 
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
@@ -26,11 +31,6 @@ import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import org.jboss.pnc.api.constants.OpenapiConstants;
 import org.jboss.pnc.api.dto.ComponentVersion;
 import org.jboss.pnc.api.dto.ErrorResponse;
-
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 
 /**
  * Endpoint for obtaining of the current version.

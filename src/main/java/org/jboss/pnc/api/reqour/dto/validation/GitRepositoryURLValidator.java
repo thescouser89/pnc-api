@@ -17,13 +17,15 @@
  */
 package org.jboss.pnc.api.reqour.dto.validation;
 
-import lombok.Builder;
-import lombok.Value;
-import org.jboss.pnc.api.dto.validation.DomainNameUtil;
+import java.util.regex.Matcher;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-import java.util.regex.Matcher;
+
+import org.jboss.pnc.api.dto.validation.DomainNameUtil;
+
+import lombok.Builder;
+import lombok.Value;
 
 /**
  * Validates whether the provided URL is of the format {@link Patterns.NonScpLike} or {@link Patterns.ScpLike}.

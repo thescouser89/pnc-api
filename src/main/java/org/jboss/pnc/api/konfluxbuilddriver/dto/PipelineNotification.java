@@ -1,10 +1,11 @@
 package org.jboss.pnc.api.konfluxbuilddriver.dto;
 
+import org.jboss.pnc.api.dto.Request;
+
 import lombok.Builder;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.dto.Request;
 
 @RequiredArgsConstructor
 @Data

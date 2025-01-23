@@ -17,13 +17,15 @@
  */
 package org.jboss.pnc.api.reqour.dto;
 
+import javax.validation.constraints.NotNull;
+
+import org.jboss.pnc.api.enums.InternalSCMCreationStatus;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.enums.InternalSCMCreationStatus;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * Response DTO of internal repository creation operation.

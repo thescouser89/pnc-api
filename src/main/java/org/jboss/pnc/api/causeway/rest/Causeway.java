@@ -17,16 +17,16 @@
  */
 package org.jboss.pnc.api.causeway.rest;
 
-import org.jboss.pnc.api.causeway.dto.push.BuildPushRequest;
-import org.jboss.pnc.api.causeway.dto.untag.UntagRequest;
-import org.jboss.pnc.api.dto.ComponentVersion;
-
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
+
+import org.jboss.pnc.api.causeway.dto.push.BuildPushRequest;
+import org.jboss.pnc.api.causeway.dto.untag.UntagRequest;
+import org.jboss.pnc.api.dto.ComponentVersion;
 
 @Consumes(MediaType.APPLICATION_JSON)
 @Path("/")

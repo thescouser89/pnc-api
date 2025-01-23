@@ -1,14 +1,15 @@
 package org.jboss.pnc.api.causeway.dto.push;
 
+import java.util.Objects;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NonNull;
 import lombok.extern.jackson.Jacksonized;
-
-import java.util.Objects;
 
 /**
  * @author <a href="mailto:matejonnet@gmail.com">Matej Lazar</a>

@@ -1,6 +1,7 @@
 package org.jboss.pnc.api.indy.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

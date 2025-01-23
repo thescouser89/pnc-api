@@ -18,7 +18,20 @@
 
 package org.jboss.pnc.api.dto;
 
+import static org.jboss.pnc.api.constants.HttpHeaders.AUTHORIZATION_STRING;
+
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.validation.Valid;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+import org.jboss.pnc.api.dto.validation.ValidURI;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -26,16 +39,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.dto.validation.ValidURI;
-
-import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.jboss.pnc.api.constants.HttpHeaders.AUTHORIZATION_STRING;
 
 @Data
 @AllArgsConstructor

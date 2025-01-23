@@ -18,15 +18,17 @@
 
 package org.jboss.pnc.api.bifrost.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import org.jboss.pnc.api.bifrost.enums.Format;
+import java.text.MessageFormat;
+import java.util.Map;
 
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
-import java.text.MessageFormat;
-import java.util.Map;
+
+import org.jboss.pnc.api.bifrost.enums.Format;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @author <a href="mailto:matejonnet@gmail.com">Matej Lazar</a>

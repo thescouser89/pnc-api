@@ -17,6 +17,8 @@ package org.jboss.pnc.api.causeway.dto.untag;
 
 import java.util.Objects;
 
+import javax.validation.Valid;
+
 import org.jboss.pnc.api.dto.Request;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -25,8 +27,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Data;
 import lombok.NonNull;
-
-import javax.validation.Valid;
 
 /**
  *

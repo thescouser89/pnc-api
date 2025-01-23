@@ -4,6 +4,9 @@
  */
 package org.jboss.pnc.api.reqour.rest;
 
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
@@ -13,9 +16,6 @@ import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import org.jboss.pnc.api.constants.OpenapiConstants;
 import org.jboss.pnc.api.dto.ErrorResponse;
 import org.jboss.pnc.api.reqour.dto.CancelRequest;
-
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
 
 /**
  * Endpoint for cancelling asynchronous tasks.

@@ -4,11 +4,11 @@
  */
 package org.jboss.pnc.api.reqour.dto;
 
+import javax.validation.constraints.NotNull;
+
 import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * Response DTO of the cancel operation

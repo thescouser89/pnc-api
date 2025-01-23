@@ -17,13 +17,15 @@
  */
 package org.jboss.pnc.api.reqour.dto;
 
+import javax.validation.constraints.NotNull;
+
+import org.jboss.pnc.api.reqour.dto.validation.ValidGitRepositoryURL;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.reqour.dto.validation.ValidGitRepositoryURL;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * DTO used as a response of the reqour's repository clone operation. It's sent as a callback to the invoker.

@@ -4,12 +4,13 @@
  */
 package org.jboss.pnc.api.dto;
 
+import java.util.regex.Pattern;
+
+import javax.validation.constraints.NotNull;
+
 import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-
-import javax.validation.constraints.NotNull;
-import java.util.regex.Pattern;
 
 /**
  * Group ID and Artifact ID of a GAV.

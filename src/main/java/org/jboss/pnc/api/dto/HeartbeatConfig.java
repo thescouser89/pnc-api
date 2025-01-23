@@ -18,14 +18,16 @@
 
 package org.jboss.pnc.api.dto;
 
+import java.util.concurrent.TimeUnit;
+
+import javax.validation.Valid;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
-
-import javax.validation.Valid;
-import java.util.concurrent.TimeUnit;
 
 @RequiredArgsConstructor
 @Data

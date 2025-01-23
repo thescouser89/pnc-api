@@ -1,13 +1,15 @@
 package org.jboss.pnc.api.deliverablesanalyzer.dto;
 
+import java.util.List;
+
+import org.jboss.pnc.api.dto.Request;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.dto.Request;
-
-import java.util.List;
 
 @Data
 @Jacksonized

@@ -1,11 +1,11 @@
 package org.jboss.pnc.api.bifrost;
 
+import static java.text.MessageFormat.format;
+
 import org.jboss.pnc.api.bifrost.dto.Line;
 import org.jboss.pnc.api.bifrost.enums.Format;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static java.text.MessageFormat.format;
 
 public class LineFormatTest {
 

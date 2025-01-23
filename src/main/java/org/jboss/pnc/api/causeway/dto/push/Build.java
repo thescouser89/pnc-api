@@ -15,14 +15,15 @@
  */
 package org.jboss.pnc.api.causeway.dto.push;
 
+import java.util.Date;
+import java.util.Set;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
 import lombok.Data;
 import lombok.NonNull;
-
-import java.util.Date;
-import java.util.Set;
 
 /**
  *

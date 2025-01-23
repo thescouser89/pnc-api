@@ -17,13 +17,13 @@
  */
 package org.jboss.pnc.api.constants;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import static org.jboss.pnc.api.constants.Patterns.PRODUCT_MILESTONE_VERSION;
+import static org.jboss.pnc.api.constants.Patterns.PRODUCT_RELEASE_VERSION;
 
 import java.util.regex.Pattern;
 
-import static org.jboss.pnc.api.constants.Patterns.PRODUCT_MILESTONE_VERSION;
-import static org.jboss.pnc.api.constants.Patterns.PRODUCT_RELEASE_VERSION;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author <a href="mailto:matejonnet@gmail.com">Matej Lazar</a>

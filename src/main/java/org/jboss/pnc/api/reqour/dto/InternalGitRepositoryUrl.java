@@ -4,11 +4,13 @@
  */
 package org.jboss.pnc.api.reqour.dto;
 
+import org.jboss.pnc.api.reqour.dto.validation.ValidGitRepositoryURL;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.reqour.dto.validation.ValidGitRepositoryURL;
 
 /**
  * Union type for grouping both readonly, and readwrite git URLs.

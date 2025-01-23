@@ -17,14 +17,16 @@
  */
 package org.jboss.pnc.api.repositorydriver.dto;
 
+import javax.validation.constraints.NotNull;
+
+import org.jboss.pnc.api.enums.RepositoryType;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.enums.RepositoryType;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * Contains information related to a repository of build artifacts (i.e. Maven, NPM, etc).

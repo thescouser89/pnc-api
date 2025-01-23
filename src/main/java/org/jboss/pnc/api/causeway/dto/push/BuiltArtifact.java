@@ -17,6 +17,7 @@ package org.jboss.pnc.api.causeway.dto.push;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
 import lombok.Data;
 import lombok.NonNull;
 

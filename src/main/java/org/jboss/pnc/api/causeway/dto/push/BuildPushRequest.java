@@ -17,15 +17,17 @@
  */
 package org.jboss.pnc.api.causeway.dto.push;
 
+import javax.validation.Valid;
+
+import org.jboss.pnc.api.dto.HeartbeatConfig;
+import org.jboss.pnc.api.dto.Request;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Builder;
 import lombok.NonNull;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-import org.jboss.pnc.api.dto.HeartbeatConfig;
-import org.jboss.pnc.api.dto.Request;
-
-import javax.validation.Valid;
 
 @Value
 @JsonIgnoreProperties(ignoreUnknown = true)

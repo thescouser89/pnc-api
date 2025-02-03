@@ -12,7 +12,7 @@ import lombok.extern.jackson.Jacksonized;
 @Jacksonized
 @Builder(builderClassName = "Builder")
 public class PipelineNotification {
-    private final String status;
+    private final PipelineStatus status;
     private final String buildId;
     private final Request completionCallback;
 }

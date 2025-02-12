@@ -22,11 +22,15 @@ import org.jboss.pnc.api.enums.ResultStatus;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.extern.jackson.Jacksonized;
 
 @Data
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Jacksonized
+@Builder
 public class Result {
     private ResultStatus result;
 }

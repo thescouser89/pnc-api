@@ -28,7 +28,7 @@
 
     <groupId>org.jboss.pnc</groupId>
     <artifactId>pnc-api</artifactId>
-    <version>3.2.2</version>
+    <version>3.2.3-SNAPSHOT</version>
     <name>pnc-api</name>
 
     <licenses>
@@ -42,7 +42,7 @@
         <connection>scm:git:git@github.com:project-ncl/pnc-api.git</connection>
         <url>scm:git:git@github.com:project-ncl/pnc-api.git</url>
         <developerConnection>scm:git:git@github.com:project-ncl/pnc-api.git</developerConnection>
-        <tag>3.2.2</tag>
+        <tag>HEAD</tag>
     </scm>
     <developers>
         <developer>

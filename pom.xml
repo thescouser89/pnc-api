@@ -29,6 +29,7 @@
     <groupId>org.jboss.pnc</groupId>
     <artifactId>pnc-api</artifactId>
     <version>3.2.2-SNAPSHOT</version>
+    <name>pnc-api</name>
 
     <licenses>
         <license>

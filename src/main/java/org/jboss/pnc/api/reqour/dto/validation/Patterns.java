@@ -26,8 +26,9 @@ public class Patterns {
      */
     public static class NonScpLike {
 
+        // need the '.' in repository for repositories like 'vert.x'
         public static final Pattern PATTERN = Pattern.compile(
-                "^(?<protocol>[\\w+]+)://(?:(?<user>[\\w-]+)@)?(?<host>[\\w.]+)(?::(?<port>\\d+))?(?:/(?<organization>[\\w-]+))*?/(?<repository>[\\w-]+(?:\\.git)?)$");
+                "^(?<protocol>[\\w+]+)://(?:(?<user>[\\w-]+)@)?(?<host>[\\w.]+)(?::(?<port>\\d+))?(?:/(?<organization>[\\w-]+))*?/(?<repository>[\\w.-]+(?:\\.git)?)$");
 
         public static final String PROTOCOL_GROUP = "protocol";
         public static final String USER_GROUP = "user";
@@ -42,8 +43,9 @@ public class Patterns {
      */
     public static class ScpLike {
 
+        // need the '.' in repository for repositories like 'vert.x'
         public static final Pattern PATTERN = Pattern.compile(
-                "^(?:(?<protocol>[\\w+]+)://)?(?<user>[\\w-]+)@(?<host>[\\w.]+)(?::(?<port>\\d+))?:(?:(?<organization>[\\w-]+)/)*?(?<repository>[\\w-]+)\\.git$");
+                "^(?:(?<protocol>[\\w+]+)://)?(?<user>[\\w-]+)@(?<host>[\\w.]+)(?::(?<port>\\d+))?:(?:(?<organization>[\\w-]+)/)*?(?<repository>[\\w.-]+)\\.git$");
 
         public static final String PROTOCOL_GROUP = "protocol";
         public static final String USER_GROUP = "user";

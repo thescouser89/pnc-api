@@ -69,6 +69,15 @@ public class GitRepositoryURLValidatorTest {
     }
 
     @Test
+    public void validate_whenValidScpLikeExternalURL_returnsEmptyViolationsForVertx() {
+        UrlRequest request = new UrlRequest("git@github.com:project/vert.x.git");
+
+        Set<ConstraintViolation<UrlRequest>> violations = validator.validate(request);
+
+        assertThat(violations).isEmpty();
+    }
+
+    @Test
     public void validate_whenFileProtocol_returnsEmptyViolations() {
         UrlRequest request = new UrlRequest("file:///tmp/foo/bar");
 

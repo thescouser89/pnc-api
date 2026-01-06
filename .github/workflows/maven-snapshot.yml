@@ -7,7 +7,7 @@ on:
 jobs:
   snapshot:
     # only run for this repository and not on forked ones
-    if: github.repository == 'project-ncl/pnc-common'
+    if: github.repository == 'project-ncl/pnc-api'
     runs-on: ubuntu-latest
 
     steps:

@@ -7,6 +7,9 @@ updates:
   cooldown:
     default-days: 7
   open-pull-requests-limit: 10
+    exclude:
+      - "org.jboss.da:*"
+      - "org.jboss.pnc*:*"        # match org.jboss.pnc:xyz and org.jboss.pnc.group:xyz
 
 - package-ecosystem: "github-actions" # Also update Github actions
   directory: "/"

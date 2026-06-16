@@ -2,6 +2,7 @@ package org.jboss.pnc.api.repositorydriver.dto;
 
 import java.util.List;
 
+import org.jboss.pnc.api.enums.BuildCategory;
 import org.jboss.pnc.api.enums.BuildType;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -23,6 +24,7 @@ public class RepositoryCreateRequest {
 
     private final String buildContentId;
     private final BuildType buildType;
+    private final BuildCategory buildCategory;
     private final boolean tempBuild;
 
     private final boolean brewPullActive;
